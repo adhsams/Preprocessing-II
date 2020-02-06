@@ -194,6 +194,7 @@ img {
 @media (max-width: 500px) {
   .navigation {
     flex-direction: column;
+    border-bottom: 2px dashed #C0C0C0;
   }
   .navigation .h1 {
     display: flex;
@@ -278,4 +279,46 @@ img {
   background-color: #038C7F;
   padding: 4%;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .home header {
+    margin: 10px 5%;
+    border-bottom: 2px dashed #C0C0C0;
+  }
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  .home .inverse-content {
+    padding: 20px 0;
+    border-bottom: 2px dashed #C0C0C0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home .content-destination {
+    width: 90%;
+    padding: 20px 0;
+    margin: 0 5%;
+  }
+  .home .content-pick {
+    margin: 0 15%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
+  .home .content-pick .destination .btn {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 3%;
+    border-radius: 10px;
+  }
 }

@@ -3,9 +3,8 @@
   header {
     .welcome {
       margin: 30px 0;
-    }
-  }
-   
+    }//ENDS .WELCOME
+  }//ENDS HEADER
 
   .content-section {
     margin: 30px 0;
@@ -16,7 +15,7 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
+    }//ENDS .TEXT-CONTENT
 
     .img-content {
       width: 48%;
@@ -24,9 +23,9 @@
 
       img {
         border-radius: 10px;
-      }
-    }
-  }
+      }//ENDS IMG
+    }//ENDS .IMG-CONTENT
+  }//ENDS .CONTENT-SECTION
 
   .inverse-content {
     padding-bottom: 30px;
@@ -35,13 +34,13 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+    }//ENDS .TEXT-CONTENT
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+    }//ENDS .IMG-CONTENT
+  }//ENDS .INVERSE-CONTENT
 
   .content-destination {
     width: 75%;
@@ -49,8 +48,8 @@
 
     img {
       border-radius: 10px;
-    }
-  }
+    }//ENDS IMG
+  }//ENDS .CONTENT-DESTINATION
 
   .content-pick {
     padding-top: 30px;
@@ -64,8 +63,56 @@
 
       .btn {
         .btn-styl();
-      }
-      
-    }
-  }
+      }//ENDS .BTN      
+    }//ENDS .DESTINATION
+  }//ENDS .CONTENT-PICK
+
+  @media @mobile {
+
+    header {
+      margin: 10px 5%;
+      border-bottom: 2px dashed @navigation-border;
+    }//ENDS @MEDIA HEADER
+
+    .content-section {
+      .flex(column);
+      margin: 0 5%;
+     
+      .text-content{
+        width: 100%;
+      }//ENDS @MEDIA .TEXT-CONTENT
+
+      .img-content {
+        width: 100%;
+      }//ENDS @MEDIA .IMG-CONTENT
+    }//ENDS @MEDIA .CONTENT-SECTION
+    
+    .inverse-content {
+      padding: 20px 0;
+      border-bottom: 2px dashed @navigation-border;
+      .flex(column-reverse);
+    }//ENDS @MEDIA .INVERSE-CONTENT
+
+    .content-destination {
+      width: 90%;
+      padding: 20px 0;
+      margin: 0 5%;         
+    }//ENDS @MEDIA .CONTENT-DESTINATION
+
+    .content-pick {
+       margin: 0 15%;
+      .flex(column);
+
+      .destination {
+        width: 100%;
+
+        .btn {
+          width: 100%;
+          font-size: 1.4rem;
+          padding: 3%;
+          border-radius: 10px;
+        }//ENDS @MEDIA .BTN
+      }//ENDS @MEDIA .DESTINATION
+    }//ENDS @MEDIA. CONTENT-PICK
+  }//ENDS @MEDIA
 }// home
