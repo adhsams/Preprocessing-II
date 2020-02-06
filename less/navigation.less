@@ -23,5 +23,25 @@
             padding: 30px 0;
             margin: 0 2.5%;
         }//ENDS A
-    }//ENDS NAV
+    }//ENDS NAV 
+    @media @mobile {
+        flex-direction: column;
+        
+            .h1 {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 10px 0;
+            }//ENDS .H1
+
+            nav {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+
+                a {
+                    padding: 10px 0;
+                }//ENDS A
+            }//ENDS @MEDIA NAV            
+    }//ENDS @MEDIA
 }//ENDS DIV
